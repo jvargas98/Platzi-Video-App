@@ -17,20 +17,16 @@ import {
   Image,
 } from 'react-native';
 
+import Home from './src/screens/containers/Home';
+
 const App: () => React$Node = () => {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View style={styles.body}>
-          <View style={styles.sectionContainer}>
-            <Image
-              source={require('./assets/logo.png')}
-              style={{width: 100, height: 100}}
-            />
-          </View>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <Home>
+      <Text>Header</Text>
+      <Text>Buscador</Text>
+      <Text>Categorias</Text>
+      <Text>Sugerencias</Text>
+    </Home>
   );
 };
 
